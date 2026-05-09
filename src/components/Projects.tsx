@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Github, ExternalLink, Cloud, ShoppingBag, Stethoscope, Layout } from "lucide-react";
+import { ExternalLink, Cloud, ShoppingBag, Stethoscope, Layout } from "lucide-react";
+import { GithubIcon as Github } from "./BrandIcons";
 import { Section, SectionHeader } from "./Section";
 
 const projects = [

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { GithubIcon as Github, LinkedinIcon as Linkedin } from "./BrandIcons";
 import { Section, SectionHeader } from "./Section";
 
 const info = [

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Download, Mail, ArrowRight, Sparkles } from "lucide-react";
+import { Download, Mail, ArrowRight, Sparkles } from "lucide-react";
+import { GithubIcon as Github, LinkedinIcon as Linkedin } from "./BrandIcons";
 import sakshi from "@/assets/sakshi.jpg";
 
 const ROLES = ["Full Stack Developer", "MERN Stack Developer", "BCA Student", "Problem Solver"];
