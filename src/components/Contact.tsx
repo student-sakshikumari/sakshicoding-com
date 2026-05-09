@@ -72,7 +72,7 @@ export function Contact() {
 
           <div className="flex gap-3 pt-2">
             <a
-              href="https://github.com/"
+              href="https://github.com/student-sakshikumari"
               target="_blank"
               rel="noreferrer"
               className="flex-1 glass-strong rounded-2xl p-4 flex items-center justify-center gap-2 hover:border-primary/40 transition-colors"
@@ -80,7 +80,7 @@ export function Contact() {
               <Github size={18} /> <span className="text-sm">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/sakshi-kumari-65a184328/"
               target="_blank"
               rel="noreferrer"
               className="flex-1 glass-strong rounded-2xl p-4 flex items-center justify-center gap-2 hover:border-primary/40 transition-colors"

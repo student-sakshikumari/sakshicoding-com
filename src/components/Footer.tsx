@@ -15,7 +15,7 @@ export function Footer() {
 
         <div className="flex items-center gap-3">
           <a
-            href="https://github.com/"
+            href="https://github.com/student-sakshikumari"
             target="_blank"
             rel="noreferrer"
             className="p-2.5 rounded-lg glass hover:text-primary transition-colors"
@@ -24,7 +24,7 @@ export function Footer() {
             <Github size={16} />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/sakshi-kumari-65a184328/"
             target="_blank"
             rel="noreferrer"
             className="p-2.5 rounded-lg glass hover:text-primary transition-colors"

@@ -101,7 +101,7 @@ export function Hero() {
             <span className="text-xs uppercase tracking-widest text-muted-foreground">Connect</span>
             <div className="h-px w-8 bg-border" />
             <a
-              href="https://github.com/"
+              href="https://github.com/student-sakshikumari"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-lg glass hover:text-primary hover:scale-110 transition-all"
@@ -110,7 +110,7 @@ export function Hero() {
               <Github size={18} />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/sakshi-kumari-65a184328/"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-lg glass hover:text-primary hover:scale-110 transition-all"
