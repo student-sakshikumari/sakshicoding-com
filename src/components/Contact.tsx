@@ -28,8 +28,7 @@ export function Contact() {
       <div className="grid lg:grid-cols-5 gap-8">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           className="lg:col-span-2 space-y-4"
         >
@@ -63,8 +62,7 @@ export function Contact() {
 
         <motion.form
           initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           onSubmit={onSubmit}
           className="lg:col-span-3 glass-strong rounded-2xl p-6 sm:p-8 space-y-4"

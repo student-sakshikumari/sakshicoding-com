@@ -42,8 +42,7 @@ export function Skills() {
           <motion.div
             key={g.title}
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: gi * 0.1 }}
             className="glass-strong rounded-2xl p-6 hover:border-primary/30 transition-colors"
           >
@@ -61,8 +60,7 @@ export function Skills() {
                   <div className="h-2 rounded-full bg-secondary overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
-                      whileInView={{ width: `${s.level}%` }}
-                      viewport={{ once: true }}
+                      animate={{ width: `${s.level}%` }}
                       transition={{ duration: 1.2, delay: 0.1 + i * 0.08, ease: "easeOut" }}
                       className="h-full rounded-full"
                       style={{ background: "var(--gradient-primary)", boxShadow: "0 0 12px var(--purple-glow)" }}
