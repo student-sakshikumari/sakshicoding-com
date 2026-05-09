@@ -5,7 +5,6 @@ import {
   createRootRouteWithContext,
   useRouter,
   HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
@@ -72,18 +71,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Sakshi Kumari's portfolio showcases her MERN Stack development skills and BCA student journey." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Sakshi Kumari's portfolio showcases her MERN Stack development skills and BCA student journey." },
+      { title: "Sakshi Kumari — Full Stack Developer Portfolio" },
+      {
+        name: "description",
+        content:
+          "Sakshi Kumari's portfolio showcases her MERN Stack development skills and BCA student journey.",
+      },
+      { name: "author", content: "Sakshi Kumari" },
+      { property: "og:title", content: "Sakshi Kumari — Full Stack Developer Portfolio" },
+      {
+        property: "og:description",
+        content:
+          "Sakshi Kumari's portfolio showcases her MERN Stack development skills and BCA student journey.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Sakshi Kumari's portfolio showcases her MERN Stack development skills and BCA student journey." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/17a20ad1-fbaf-4c32-a2ff-10bbf8a108f0/id-preview-a16218be--f334c271-eaa2-4d9d-a2c3-152a00c6f529.lovable.app-1778300613671.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/17a20ad1-fbaf-4c32-a2ff-10bbf8a108f0/id-preview-a16218be--f334c271-eaa2-4d9d-a2c3-152a00c6f529.lovable.app-1778300613671.png" },
+      { name: "twitter:site", content: "@sakshicoding" },
+      { name: "twitter:title", content: "Sakshi Kumari — Full Stack Developer Portfolio" },
+      {
+        name: "twitter:description",
+        content:
+          "Sakshi Kumari's portfolio showcases her MERN Stack development skills and BCA student journey.",
+      },
     ],
     links: [
       {
@@ -92,31 +101,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
   }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
     <QueryClientProvider client={queryClient}>
+      <HeadContent />
       <Outlet />
     </QueryClientProvider>
   );

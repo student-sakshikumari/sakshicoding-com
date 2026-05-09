@@ -19,7 +19,14 @@ const stats = [
 export function About() {
   return (
     <Section id="about">
-      <SectionHeader kicker="About Me" title={<>Crafting code with <span className="text-gradient">curiosity</span></>} />
+      <SectionHeader
+        kicker="About Me"
+        title={
+          <>
+            Crafting code with <span className="text-gradient">curiosity</span>
+          </>
+        }
+      />
 
       <div className="grid lg:grid-cols-5 gap-8">
         <motion.div
@@ -29,16 +36,18 @@ export function About() {
           className="lg:col-span-3 glass-strong rounded-2xl p-8"
         >
           <p className="text-lg leading-relaxed text-foreground/90 mb-4">
-            I'm currently pursuing my <span className="text-gradient font-semibold">Bachelor of Computer Applications</span> at
-            Vidya Vihar Institute of Technology, graduating in 2027.
+            I'm currently pursuing my{" "}
+            <span className="text-gradient font-semibold">Bachelor of Computer Applications</span>{" "}
+            at Vidya Vihar Institute of Technology, graduating in 2027.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            My journey is fueled by an obsession with web development and a constant drive to learn modern
-            technologies. I build real-world applications that solve problems — from sleek frontends to scalable
-            full-stack systems powered by the MERN stack.
+            My journey is fueled by an obsession with web development and a constant drive to learn
+            modern technologies. I build real-world applications that solve problems — from sleek
+            frontends to scalable full-stack systems powered by the MERN stack.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            My goal? Becoming a Software Engineer & Full Stack Developer who builds products people love.
+            My goal? Becoming a Software Engineer & Full Stack Developer who builds products people
+            love.
           </p>
 
           <div className="grid grid-cols-4 gap-4 mt-8 pt-8 border-t border-border">
@@ -61,8 +70,10 @@ export function About() {
               whileHover={{ y: -4 }}
               className="glass rounded-2xl p-5 hover:border-primary/40 transition-colors"
             >
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
-                   style={{ background: "var(--gradient-soft)" }}>
+              <div
+                className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
+                style={{ background: "var(--gradient-soft)" }}
+              >
                 <t.icon size={18} className="text-accent" />
               </div>
               <div className="font-semibold mb-1">{t.label}</div>

@@ -38,8 +38,15 @@ const projects = [
 export function Projects() {
   return (
     <Section id="projects">
-      <SectionHeader kicker="Projects" title={<>Things I've <span className="text-gradient">built</span></>}
-        subtitle="A selection of work that showcases my skills and growth as a developer." />
+      <SectionHeader
+        kicker="Projects"
+        title={
+          <>
+            Things I've <span className="text-gradient">built</span>
+          </>
+        }
+        subtitle="A selection of work that showcases my skills and growth as a developer."
+      />
 
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((p, i) => (
@@ -55,15 +62,23 @@ export function Projects() {
           >
             {/* mock browser preview */}
             <div className={`relative h-44 bg-gradient-to-br ${p.accent} overflow-hidden`}>
-              <div className="absolute inset-0 opacity-20"
-                   style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "24px 24px" }} />
+              <div
+                className="absolute inset-0 opacity-20"
+                style={{
+                  backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+                  backgroundSize: "24px 24px",
+                }}
+              />
               <div className="absolute top-3 left-3 flex gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-white/40" />
                 <span className="w-2.5 h-2.5 rounded-full bg-white/40" />
                 <span className="w-2.5 h-2.5 rounded-full bg-white/40" />
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <p.icon size={64} className="text-white/90 drop-shadow-2xl group-hover:scale-110 transition-transform duration-500" />
+                <p.icon
+                  size={64}
+                  className="text-white/90 drop-shadow-2xl group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
               {p.featured && (
                 <span className="absolute top-3 right-3 glass-strong rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider">
@@ -73,23 +88,34 @@ export function Projects() {
             </div>
 
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2 group-hover:text-gradient transition-colors">{p.title}</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-gradient transition-colors">
+                {p.title}
+              </h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">{p.desc}</p>
 
               <div className="flex flex-wrap gap-1.5 mb-5">
                 {p.tags.map((t) => (
-                  <span key={t} className="text-[11px] font-mono px-2 py-1 rounded-md glass text-muted-foreground">
+                  <span
+                    key={t}
+                    className="text-[11px] font-mono px-2 py-1 rounded-md glass text-muted-foreground"
+                  >
                     {t}
                   </span>
                 ))}
               </div>
 
               <div className="flex gap-2">
-                <a href="#" className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-2 rounded-lg glass hover:bg-white/10 transition-colors">
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-2 rounded-lg glass hover:bg-white/10 transition-colors"
+                >
                   <Github size={14} /> Code
                 </a>
-                <a href="#" className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-2 rounded-lg text-primary-foreground"
-                   style={{ background: "var(--gradient-primary)" }}>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-2 rounded-lg text-primary-foreground"
+                  style={{ background: "var(--gradient-primary)" }}
+                >
                   <ExternalLink size={14} /> Live Demo
                 </a>
               </div>

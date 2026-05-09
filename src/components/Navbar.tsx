@@ -33,7 +33,9 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto max-w-6xl px-4">
-        <div className={`glass-strong rounded-2xl px-5 py-3 flex items-center justify-between ${scrolled ? "shadow-[var(--shadow-card)]" : ""}`}>
+        <div
+          className={`glass-strong rounded-2xl px-5 py-3 flex items-center justify-between ${scrolled ? "shadow-[var(--shadow-card)]" : ""}`}
+        >
           <a href="#home" className="font-display font-bold text-lg">
             <span className="text-gradient">{"<Sakshi />"}</span>
           </a>
@@ -58,7 +60,11 @@ export function Navbar() {
             Hire Me
           </a>
 
-          <button onClick={() => setOpen(!open)} className="md:hidden p-2 rounded-lg hover:bg-white/5" aria-label="Menu">
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden p-2 rounded-lg hover:bg-white/5"
+            aria-label="Menu"
+          >
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>

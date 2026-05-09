@@ -34,8 +34,15 @@ const groups = [
 export function Skills() {
   return (
     <Section id="skills">
-      <SectionHeader kicker="Skills" title={<>My <span className="text-gradient">tech stack</span></>}
-        subtitle="Tools and technologies I use to bring ideas to life." />
+      <SectionHeader
+        kicker="Skills"
+        title={
+          <>
+            My <span className="text-gradient">tech stack</span>
+          </>
+        }
+        subtitle="Tools and technologies I use to bring ideas to life."
+      />
 
       <div className="grid lg:grid-cols-3 gap-6">
         {groups.map((g, gi) => (
@@ -47,7 +54,10 @@ export function Skills() {
             className="glass-strong rounded-2xl p-6 hover:border-primary/30 transition-colors"
           >
             <h3 className="text-lg font-bold mb-5 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full" style={{ background: "var(--gradient-primary)" }} />
+              <span
+                className="w-2 h-2 rounded-full"
+                style={{ background: "var(--gradient-primary)" }}
+              />
               {g.title}
             </h3>
             <div className="space-y-4">
@@ -63,7 +73,10 @@ export function Skills() {
                       animate={{ width: `${s.level}%` }}
                       transition={{ duration: 1.2, delay: 0.1 + i * 0.08, ease: "easeOut" }}
                       className="h-full rounded-full"
-                      style={{ background: "var(--gradient-primary)", boxShadow: "0 0 12px var(--purple-glow)" }}
+                      style={{
+                        background: "var(--gradient-primary)",
+                        boxShadow: "0 0 12px var(--purple-glow)",
+                      }}
                     />
                   </div>
                 </div>

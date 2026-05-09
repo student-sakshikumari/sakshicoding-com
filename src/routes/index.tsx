@@ -13,9 +13,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Sakshi Kumari — MERN Stack Developer & BCA Student" },
-      { name: "description", content: "Portfolio of Sakshi Kumari, an aspiring Full Stack Developer specializing in the MERN stack — projects, skills, and experience." },
+      {
+        name: "description",
+        content:
+          "Portfolio of Sakshi Kumari, an aspiring Full Stack Developer specializing in the MERN stack — projects, skills, and experience.",
+      },
       { property: "og:title", content: "Sakshi Kumari — Full Stack Developer Portfolio" },
-      { property: "og:description", content: "MERN Stack Developer & BCA student building modern, user-friendly web applications." },
+      {
+        property: "og:description",
+        content:
+          "MERN Stack Developer & BCA student building modern, user-friendly web applications.",
+      },
     ],
   }),
   component: Index,
